@@ -1,0 +1,26 @@
+<section>
+    <div class="hContainer">
+        <div class="header">
+            <h1>What We Provide</h1>
+            <hr>
+        </div>
+
+        <div class="item-group" >
+            @for(item of whatWeProvide; track item.index) {
+                <div class="item">
+                    <p> {{ item.index }} </p>
+                    <h4> {{item.title}} </h4>
+                    <p class="desc"> {{item.description}} </p>
+                </div>
+                <hr>
+            }
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+

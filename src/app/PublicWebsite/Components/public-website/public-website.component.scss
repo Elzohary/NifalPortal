@@ -1,0 +1,52 @@
+mat-sidenav-container {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    overflow: visible;
+  }
+
+  mat-sidenav {
+    width: 33%;
+    background-color: #0f3531;
+    overflow: visible;
+  }
+
+  mat-sidenav-content {
+    height: 100%;
+    overflow: visible;
+  }
+
+  a {
+    color: white;
+  }
+
+  .list {
+    color: white;
+    padding: 8%;
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+  hr {
+    margin-bottom: 2em;
+  }
+
+  img {
+    width: 40%;
+  }
+
+
+  h5 {
+    margin-top: 5em;
+  }
+
+  .contact {
+    font-size: small;
+    font-weight: 400;
+  }

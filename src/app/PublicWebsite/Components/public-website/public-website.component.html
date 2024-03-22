@@ -1,0 +1,29 @@
+<mat-sidenav-container class="overlay">
+    <mat-sidenav [(opened)]="isSideNavOpen" mode="over" position="end">
+        <ul class="list">
+            <div class="menu">
+                <img src="../../assets/logo.png" alt="">
+            <hr>
+            <li>Home</li>
+            <li><a routerLink="/login">Login</a></li>
+            </div>
+
+            <div class="info">
+                <h5>Contact Information</h5>
+            <ul>
+                <li class="contact">KSA - Rastanura 31941</li>
+                <li class="contact">013 6674009</li>
+                <li class="contact">suc&#64;suc-sa.com</li>
+            </ul>
+            </div>
+        </ul>
+        
+    </mat-sidenav>
+
+    <mat-sidenav-content style="height: 100%;">
+        <app-home></app-home>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+
+<!-- <app-home-test-to-be-removed-later></app-home-test-to-be-removed-later> -->

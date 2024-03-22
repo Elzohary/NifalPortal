@@ -1,0 +1,115 @@
+// Set the base font size for the root element
+$base-font-size: 16px;
+
+// Define a function to calculate the font size based on the desired ratio
+@function calculate-font-size($ratio) {
+  @return $base-font-size * $ratio;
+}
+
+// Define breakpoints for different screen sizes
+$small-screen: 600px;
+$medium-screen: 900px;
+$large-screen: 1200px;
+
+// Responsive font sizes using media queries
+
+
+
+section {
+    height: 100vh;
+    color: black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    box-sizing: border-box;
+}
+
+.hContainer {
+    background-color: white;
+    border-radius: 2em;
+    height: 100vw;
+    max-height: 88vh; 
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+
+    p {
+        font-size: 1vw;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 100%;
+        
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-basis: 0;
+            flex: 1.5;
+            width: 50%;
+            max-height: 100%;
+
+            h1 {
+                line-height: normal;
+                font-size: calculate-font-size(2); // Default font size
+              
+                @media screen and (min-width: $small-screen) {
+                  font-size: calculate-font-size(2.5); // Adjust for small screens
+                }
+              
+                @media screen and (min-width: $medium-screen) {
+                  font-size: calculate-font-size(3); // Adjust for medium screens
+                }
+              
+                @media screen and (min-width: $large-screen) {
+                  font-size: calculate-font-size(3.5); // Adjust for large screens
+                }
+              }
+
+            h4 {
+                font-size: 1.5vw;
+                font-weight: 400;
+                width: 90%;
+            }
+        }
+
+        .right {
+            flex-basis: 1;
+            flex: 1;
+            box-sizing: border-box;
+            max-height: 100%;
+            width: 50%;
+
+            img {
+                max-height: 100%;
+                width: 100%;
+                height: 100%;
+                border-radius: 3%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* .learnBtn {
+    margin-top: auto;
+} */
+
+
+
+h4 {
+    line-height: 1.5em;
+}

@@ -1,0 +1,160 @@
+a, p, h1, h5 {
+    color: #fff;
+  }
+  
+  $card-height: 90vh;
+  $card-length: 5;
+  $class-name: cards_wrap;
+  
+  .#{$class-name} {
+  
+    &__card {
+  
+      h2 {
+        font-size: 5vw;
+        text-align: center;
+  
+        span {
+          margin-top: 1rem;
+          display: block;
+          font-size: 1rem;
+          font-weight: normal;
+        }
+      }
+  
+      &-stick {
+        top: 2vh;
+        position: sticky;
+        margin-inline: 3%;
+        padding: 3%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border-radius: 2rem;
+        background-position: center;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(https://images.pexels.com/photos/159375/construction-site-build-construction-work-159375.jpeg);
+        background-size:100%;
+        background-size: cover;
+        height: $card-height;
+  
+        h1 {
+          font-size: 3.5rem;
+          color: white;
+      }
+    
+      .bottom {
+          margin-bottom: 17%;
+          width: 50%;
+    
+          h5 {
+              font-weight: 400;
+              font-size: 1.5rem;
+              line-height: 1.7em;
+          }
+      }
+      }
+  
+      &-other {
+        top: 27vh;
+        position: sticky;
+        margin-inline: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 2rem;
+        background-position: center;
+        /* background-image: url('https://images.unsplash.com/photo-1676799910702-5b40ee8ac092?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1649&q=80');
+        background-size: cover; */
+        height: ($card-height)-25vh;
+  
+        &.color2 {
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/7509167/pexels-photo-7509167.jpeg');
+          background-size: cover;
+          background-position: center;
+        }
+        &.color3 {
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/14365833/pexels-photo-14365833.jpeg');
+          background-size: cover;
+          background-position: center;
+        }
+        &.color4 {
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/10675505/pexels-photo-10675505.jpeg');
+          background-size: cover;
+          background-position: center;
+        }
+        &.last {
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/7358746/pexels-photo-7358746.jpeg');
+          background-size: cover;
+          background-position: center;
+        }
+      }
+  
+      @for $i from 1 through $card-length {
+        &:nth-child(#{$i}) {
+          @if $i > 1 {
+            margin-top: - $card-height * ($card-length - $i + 1);
+          }
+          height: $card-height * ($card-length - $i) + $card-height;
+        }
+      }
+    }
+  }
+  
+  
+  .hContainer {
+    background-color: rgb(255, 255, 255);
+    color: rgb(37, 37, 37) !important ;
+    border-radius: 2em;
+    height: ($card-height)-25vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    .right {
+        height: 100%;
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+        img {
+            height: 100%;
+            position: relative;
+            width: 80%;
+            border-radius: 3%;
+            object-fit: cover;
+        }
+    }
+  
+    .left {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+  
+        .leftContent {
+            p {
+                margin-bottom: 5%;
+                font-size:small;
+            }
+  
+            h1 {
+                margin-bottom: 3em;
+                font-size: 2rem;
+                color: rgb(37, 37, 37) !important ;
+            }
+  
+            h4 {
+              font-weight: 300;
+              line-height: 2vw;
+            }
+  
+            p {
+              color: rgb(37, 37, 37) !important ;
+            }
+        }
+    }
+  }
+  
