@@ -27,8 +27,6 @@ export class CardLeftPicComponent {
       const sectionRect = this.cardLeftSectoin.nativeElement.getBoundingClientRect();
       this.isInViewService.isSectionInView = sectionRect.top <= window.innerHeight && sectionRect.bottom >= 0;
       this.isInViewService.sharedData = sectionRect.top <= window.innerHeight && sectionRect.bottom >= 0; // obs
-
-
     }
   }
 }
