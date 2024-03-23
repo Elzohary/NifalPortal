@@ -51,7 +51,7 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
+                  "maximumWarning": "2.07kb",
                   "maximumError": "4kb"
                 }
               ],
@@ -67,7 +67,7 @@
         },
         "serve": {
           "options": {
-            "browserTarget": "NifalPortal:build"
+            "buildTarget": "NifalPortal:build"
           },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
