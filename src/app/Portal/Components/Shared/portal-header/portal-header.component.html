@@ -1,0 +1,24 @@
+<div class="header px-2 py-3 d-flex align-items-center justify-content-between">
+    <input class="p-2 w-75 fs-6" type="text" placeholder="Search...">
+    
+    <div class="fs-5 px-3 g-3 w-25 d-flex justify-content-end icons">
+      <button mat-button [matMenuTriggerFor]="releases"><i class="bi bi-megaphone-fill mx-2"></i></button>
+      <a><i class="bi bi-bell-fill mx-2"></i></a>
+      <a><i class="bi bi-person-circle mx-2"></i></a>
+    </div>
+  </div>
+  
+  <mat-divider class="mb-3"></mat-divider>
+  
+  
+  
+  
+  
+  
+  <mat-menu #releases="matMenu" xPosition="before">
+    <p class="m-3 fw-bold menuHeader">Upcoming Updates</p>
+    <button mat-menu-item routerLink="https://zohary.notion.site/Upcoming-Updates-90a5b5c893a44105b4d136eb6882a67e?pvs=4">Table Sorting</button>
+    <button mat-menu-item routerLink="https://zohary.notion.site/Upcoming-Updates-90a5b5c893a44105b4d136eb6882a67e?pvs=4">Dashboard Analysis</button>
+  </mat-menu>
+  
+  

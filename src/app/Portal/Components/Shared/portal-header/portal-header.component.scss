@@ -1,0 +1,37 @@
+.example-form {
+    min-width: 150px;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  input{
+    stroke: none;
+    border: none;
+    outline: none;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between  ;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .menuHeader {
+    color: rgb(18, 65, 49);
+    font-size: medium;
+  }
+
+  button{
+    background-color: transparent;
+    border: none;
+    color: rgb(99, 114, 106);
+  }
