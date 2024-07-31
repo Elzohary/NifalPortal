@@ -13,7 +13,7 @@ import { PortalSideMenuComponent } from '../portal-side-menu/portal-side-menu.co
     MatDrawerContent,
     RouterModule,
     PortalHeaderComponent,
-    PortalSideMenuComponent
+    PortalSideMenuComponent,
   ],
   templateUrl: './portal-master-view.component.html',
   styleUrl: './portal-master-view.component.scss'

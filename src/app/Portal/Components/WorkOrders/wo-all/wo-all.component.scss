@@ -1,0 +1,39 @@
+.mat-table {
+    box-shadow: none !important;
+}
+
+.mat-mdc-table {
+    overflow: scroll;
+    height: 70vh;
+    box-shadow: none;
+}
+
+.mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.tableHeader {
+    background-color: #f5f5f5;
+}
+
+.filter {
+    margin-block-start: 3em;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #497e51;
+    /* Color of the thumb (the draggable part) */
+    border-radius: 4px;
+    /* Rounded corners for the thumb */
+}
+
+.mat-mdc-row:hover .mat-mdc-cell {
+    background-color: #f2fff5;
+    cursor: pointer;
+  }

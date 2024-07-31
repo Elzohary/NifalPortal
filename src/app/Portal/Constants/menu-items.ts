@@ -1,10 +1,9 @@
 export const projectMenuItems = [
     {
         label: 'Overview',
-        link: 'overview',
         subItems: [
             {
-                label: 'Projects Overview',
+                label: 'All Projects',
                 link: 'overview'
             },
         ]
